@@ -1,0 +1,135 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title> FireBase Login App</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">    
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">  
+        
+</head>
+<body class="grey lighten-3"  onload="myfxn()">
+    <nav >
+        <div class="nav-wrapper  row">
+
+          <a href="Lgn.html" class=" col l2 s12 offset-s6 brand-logo  center-align " style=" color: black; background-color: cornsilk;font-weight: bolder">i<span style="color: firebrick;">C</span>MS</a>
+          
+          <ul id=" col l8  nav-mobile" class="right hide-on-med-and-down" >
+            
+                 
+            <li><a  class="modal-trigger  " href="#Login" id="btnLgn" >Log in</a></li>
+            <li> <label style="color: black; font-weight: bold" id="lbl"></label> </li>
+            <li><a href=" #Sign Out"id="btnsignout" ></a></li>
+          
+          </ul>
+        </div>
+    </nav>
+   
+    <div class="container">
+
+     <div class="modal" id="Login" >
+          <div class="modal-content">
+              <div class="input-field ">
+                  <input  style="color: black; font-weight: bold" id="txtmail" class="center-align " type="email" placeholder="Email" >
+                  <label for="txtmail" style="color: black; font-weight: bold">Email</label>  
+               </div>
+               <div class="input-field ">
+                    <input id="txtpwd" style="color: black" type="password"  class="center-align " placeholder="password">
+                    <label for="txtpwd"style="color: black; font-weight: bold" >Password</label> 
+                </div>
+                <div><label id="lbl_msg_login" style="color: darkgreen; font-weight: bold" ></label> <a href="#"><label id="forgotpwd" class=" gray">Forgot Password ?</label></a></div>
+                <label id="btnsignup" class="modal-close btn btn-action">Sign up</label>
+          <div class="modal-footer">
+              <label id="cls" class=" modal-close btn btn-action">Close</label>
+              <button id="btnLogin"  > Login</button>    
+          </div>
+         </div> 
+
+    </div>
+        <div id="sgnUp2" class="row">
+              <span id="sgnboard" class="col s12 l6 flow-text offset-l3 center-align" style="margin-top: 80px; background-color: lightslategray">Sign Up Here</span>
+              <span id="acct-succes" class="col s12 l6 flow-text offset-l3 center-align" style="margin-top: 80px;
+               background-color: darkgreen">Account Created Sucessfuly <i id ="mark"class="material-icons">check</i> </span>
+              <form class="col s12 offset-l3" >
+                <div class="row">
+                  <div class="input-field col l6 s12">
+                    <input id="sgnupEmail" type="email" class="center-align">
+                    <label for="email">Email</label>
+                    <span id="emailSignInput" class="helper-text" data-error="wrong" data-success="right">email@server.com</span>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col l6 s12">
+                    <input id="sgnupPwd" type="password" class="center-align" >
+                    <label for="email">Password</label>
+                    <span id="pwdSignInput" class="helper-text" data-error="wrong" data-success="right" style="color:darkred">Not more than 6 letters</span>
+                  </div>
+                </div>
+
+                <button id="sgnup3" class="btn btn-action c"> Sign Up</button> 
+              </form>
+        
+    </div>  
+      
+    <div id="icons"style="margin-top: 80px; margin-left:30px" > 
+              <div id="icons1" class="row">
+                <div class="col l3 offset-l1"><i class="large material-icons ">insert_chart</i> <div><b>Analyst</b></div></div>
+                <div class="col l3 offset-l1"><i class="large material-icons ">local_shipping</i> <div><b>Operations</b></div></div>
+                <div class="col l3 offset-l1"><i class="large material-icons ">build</i> <div><b>WorkShop</b></div></div>
+            </div>
+            <div id="icons2" class="row">
+              <div class="col l3 offset-l1"><i class="large material-icons ">account_circle</i><div><b>Admin</b></div></div>
+              <div class="col l3 offset-l1"><i class="large material-icons ">assignment</i> <div><b>Human Resource</b></div></div>
+              <div class="col l3 offset-l1"><i class="large material-icons ">business_center</i> <div><b>Business Development</b></div></div>
+          </div>
+          <div id="icons3" class="row">
+            <div class="col l3 offset-l1"><i class="large material-icons ">monetization_on</i><div><b>Accounts</b></div></div>
+            
+          </div>
+    </div>
+
+    <div id="rstpwd"  style="margin-top: 80px;">
+      <div class="row">
+      <span id="rstboard" class="col s12 l6  offset-l3 flow-text center-align" style="margin-top: 80px; background-color: lightslategray">Reset Your Password Here</span>
+      <span id="reset-succes" class="col s12 l6  offset-l3  flow-text center-align" style="margin-top: 80px;
+               background-color: darkgreen"><i id ="mark"class="material-icons">check</i> </span>
+      <form class="col l6 s12 offset-l3" >
+        
+          <div class="input-field ">
+            <input id="rstEmail" type="email" class="center-align">
+            <label for="rstEmail">Email</label>
+            <span id="emailSignInput" class="helper-text" data-error="wrong" data-success="right">email@server.com</span>
+          </div>
+        
+        <button id="rstbtn" class="btn btn-action c"> Reset</button> 
+      </form> 
+      </div>   
+    </div>
+
+     </div>
+
+     </div>
+      
+
+       
+           
+       
+            <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+            <script >
+                      $(document).ready(function(){
+                        $('.modal').modal();
+                      });
+            </script>
+
+
+       <script src="https://www.gstatic.com/firebasejs/6.6.0/firebase-app.js"></script>
+       <script src="https://www.gstatic.com/firebasejs/6.6.0/firebase-auth.js"></script>
+       <script src="https://www.gstatic.com/firebasejs/6.6.0/firebase-database.js"></script>
+      <script  src="index.js"></script> 
+     
+      
+</body>
+</html>
